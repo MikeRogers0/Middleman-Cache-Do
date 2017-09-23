@@ -3,13 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'middleman-cache-do'
-  s.version     = '0.0.1'
+  s.version     = '0.1.0'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Mike Rogers']
   s.email       = ['me@mikerogers.io']
   s.homepage    = 'https://mikerogers.io'
-  s.summary     = %q{A short summary of your extension}
-  s.description = %q{A longer description of your extension}
+  s.summary     = %q{Cache fragments of code to memcache}
+  s.description = %q{Adds a cache method to helpers and templates which helps cache blocks of expensive code}
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -18,8 +18,7 @@ Gem::Specification.new do |s|
   
   # The version of middleman-core your extension depends on
   s.add_runtime_dependency 'middleman-core', '~> 4.2', '>= 4.2.1'
-  s.add_runtime_dependency 'dalli', '~> 2.7', '>= 2.7.6'
   
   # Additional dependencies
-  # s.add_runtime_dependency("gem-name", "gem-version")
+  s.add_runtime_dependency 'dalli', '~> 2.7', '>= 2.7.6'
 end
