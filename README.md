@@ -9,15 +9,18 @@ Cache blocks of stuff into a memcache store. Handy for when you're making API ca
     gem 'dalli' # Your memcache client.
     gem 'middleman-cache-do'
 
+
 ### Install memcache locally
 
     brew install memcache
+
 
 ### .env
 
     MEMCACHEDCLOUD_SERVERS="127.0.0.1:11211"
     MEMCACHEDCLOUD_USERNAME=""
     MEMCACHEDCLOUD_PASSWORD=""
+
 
 ### config.rb
 
