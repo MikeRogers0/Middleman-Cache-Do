@@ -12,7 +12,7 @@ Cache blocks of stuff into a memcache store. Handy for when you're making API ca
 
 ### Install memcache locally
 
-    brew install memcache
+    brew install memcached
 
 
 ### .env
