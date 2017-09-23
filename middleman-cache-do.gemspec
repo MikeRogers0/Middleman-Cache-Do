@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
+$:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'middleman-cache-do'
@@ -7,9 +7,10 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Mike Rogers']
   s.email       = ['me@mikerogers.io']
-  s.homepage    = 'https://mikerogers.io'
+  s.homepage    = 'https://github.com/MikeRogers0/Middleman-Cache-Do'
   s.summary     = %q{Cache fragments of code to memcache}
   s.description = %q{Adds a cache method to helpers and templates which helps cache blocks of expensive code}
+  s.license     = 'MIT'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
